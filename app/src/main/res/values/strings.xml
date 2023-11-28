@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Arganzuela 27</string>
+
+    <string name="login">Login</string>
+    <string name="contrasena">Contraseña</string>
+    <string name="sin_rellenar">Sin rellenar</string>
+    <string name="contrasena_incorrecta">Contraseña incorrecta</string>
+    <string name="entrar">Entrar</string>
+
+    <!--ActivityMain-->
+    <string name="bienvenido">Bienvenido/a</string>
+
+    <string name="actividades">Actividades</string>
+    <string name="banco_de_horas">Banco de horas</string>
+    <string name="salas">Salas</string>
+    <string name="tareas">Tareas/a</string>
+
+
+    <string-array name="usuarios">
+        <item>Simpatizante</item>
+        <item>Militante</item>
+        <item>Administrador</item>
+    </string-array>
+
+    <string name="anuncio_eliminado_correctamente">Anuncio eliminado correctamente</string>
+    <string name="anuncio_creado_correctamente">Anuncio creado correctamente </string>
+    <string name="eliminado_correctamente">Eliminado correctamente</string>
+    <string name="creado_correctamente">Creado correctamente </string>
+
+    <!--CreadorAnuncioActivity-->
+    <string name="crear_anuncio">Crear anuncio</string>
+    <string name="editar_anuncio">Editar anuncio</string>
+    <string name="titulo">Título </string>
+    <string name="descripcion">Descripción </string>
+    <string name="campos_sin_rellenar">Campos sin rellenar </string>
+
+    <!--CreadorActividadActivity-->
+    <string name="crear_actividad">Crear actividad</string>
+    <string name="editar_actividad">Editar actividad</string>
+
+    <!--CreadorBancoHorasActivity-->
+    <string name="banco_horas">Banco de Horas</string>
+    <string name="editar_militante">Editar militante</string>
+    <string name="nombre">Nombre </string>
+    <string name="horas">Horas </string>
+
+    <!--CreadorSalaActivity-->
+    <string name="sala">Sala </string>
+    <string name="reservar_de_salas">Reservar de Salas</string>
+    <string name="reservar_sala">Reservar Sala</string>
+    <string name="sala_reservada_correctamente">Sala reservada correctamente</string>
+    <string name="editar_sala">Editar Sala</string>
+    <string name="nombre_sala">Nombre de la Sala </string>
+    <string name="fecha">Fecha </string>
+    <string name="fecha_inicio">Hora de inicio </string>
+    <string name="fecha_fin">Hora fin </string>
+    <string name="elegir_fecha_inicio">-Elegir fecha de inicio- </string>
+    <string name="elegir_hora_inicio">-Elegir hora de inicio- </string>
+    <string name="elegir_fecha_fin">-Elegir fecha fin- </string>
+    <string name="elegir_hora_fin">-Elegir hora fin- </string>
+
+    <!--CreadorTareaActivity-->
+    <string name="tareas_mayores">Tareas Mayores </string>
+    <string name="tareas_menores">Tareas Menores </string>
+    <string name="tarea_mayor">Tarea Mayor </string>
+    <string name="tarea_menor">Tarea Menor </string>
+    <string name="tarea">Tarea </string>
+    <string name="editar_tarea">Editar Tarea </string>
+    <string name="texto">Texto </string>
+    <string name="crear_tarea">Crear Tarea </string>
+    <string name="tipo">Tipo </string>
+    <string name="estado">Estado </string>
+    <string name="por_hacer">Por hacer </string>
+    <string name="en_proceso">En proceso </string>
+    <string name="hecho">Hecho </string>
+
+    <!--AlertDialog-->
+    <string name="eliminar_elemento">¿Eliminar elemento? </string>
+    <string name="si">Si </string>
+    <string name="no">No </string>
+
+</resources>

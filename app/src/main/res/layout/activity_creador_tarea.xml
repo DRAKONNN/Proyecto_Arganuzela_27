@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bc_fondo"
+    tools:context=".CreadorTareaActivity">
+
+    <TextView
+        android:id="@+id/tvTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tarea"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/bc_fondo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvTextoTarea"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tarea"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_redondo_morado"
+        android:layout_below="@+id/tvTexto"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/texto"
+        android:maxLength="30"
+        android:layout_below="@+id/tvTextoTarea" />
+
+    <TextView
+        android:id="@+id/tvTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tipo"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_redondo_morado"
+        android:layout_below="@+id/etTexto"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvTipo">
+
+        <RadioButton
+            android:id="@+id/rbTareaMayor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tarea_mayor"/>
+
+        <RadioButton
+            android:id="@+id/rbTareaMenor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tarea_menor"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvEstado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/estado"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_redondo_morado"
+        android:layout_below="@+id/rgTipo"
+        android:layout_marginTop="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/rgEstado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tvEstado">
+
+        <RadioButton
+            android:id="@+id/rbPorHacer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/por_hacer"/>
+
+        <RadioButton
+            android:id="@+id/rbEnProceso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/en_proceso"/>
+
+        <RadioButton
+            android:id="@+id/rbHecho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/hecho"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btCrearTarea"
+        android:onClick="onClickCrearBanco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/crear_tarea"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_redondo_morado"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

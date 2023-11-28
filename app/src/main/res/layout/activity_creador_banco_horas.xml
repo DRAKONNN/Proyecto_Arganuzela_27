@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bc_fondo"
+    tools:context=".CreadorBancoHorasActivity">
+
+    <TextView
+        android:id="@+id/tvTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/banco_horas"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/bc_fondo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_redondo_morado"
+        android:layout_below="@+id/tvTexto"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre"
+        android:maxLength="30"
+        android:layout_below="@+id/tvNombre" />
+
+    <TextView
+        android:id="@+id/tvHoras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/horas"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_redondo_morado"
+        android:layout_below="@+id/etNombre"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/llHorasNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/tvHoras"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btHorasNumMas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickRestar"
+            android:layout_weight="0.5"
+            android:text="-"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_redondo_rojo"
+            />
+
+        <TextView
+            android:id="@+id/tvHorasNum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_redondo_rojo"
+            />
+
+        <Button
+            android:id="@+id/btHorasNumMenos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="onClickSumar"
+            android:layout_weight="0.5"
+            android:text="+"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_redondo_rojo"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btCrearBanco"
+        android:onClick="onClickCrearBanco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/banco_horas"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_redondo_morado"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

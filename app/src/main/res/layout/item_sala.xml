@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bt_redondo_tiempo">
+
+    <LinearLayout
+        android:id="@+id/llSala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/nombre"
+            android:layout_gravity="center_vertical"
+            android:textSize="25sp"
+            android:drawablePadding="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:layout_gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivEditar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_editar"
+                android:backgroundTint="@color/black"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="50dp"
+                />
+
+            <ImageView
+                android:id="@+id/ivEliminar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_eliminar"
+                android:backgroundTint="@color/black"
+                android:layout_marginRight="10dp"
+                android:paddingRight="10dp"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFechaInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llSala"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fecha_inicio"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:drawablePadding="5dp"/>
+
+        <TextView
+            android:id="@+id/tvFechaInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fecha_inicio"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="5dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llFechaFin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llFechaInicio"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fecha_fin"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:drawablePadding="5dp"/>
+
+        <TextView
+            android:id="@+id/tvFechaFin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/fecha_fin"
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="5dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

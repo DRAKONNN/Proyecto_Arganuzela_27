@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bc_fondo"
+    tools:context=".CreadorSalaActivity">
+
+    <TextView
+        android:id="@+id/tvTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reservar_de_salas"
+        android:textSize="25dp"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@drawable/bc_fondo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvSala"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre_sala"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_redondo_morado"
+        android:layout_below="@+id/tvTexto"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNombreSala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre_sala"
+        android:maxLength="30"
+        android:layout_below="@+id/tvSala" />
+
+    <Button
+        android:id="@+id/btElegirFechaInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickElegirFecha"
+        android:text="@string/elegir_fecha_inicio"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_redondo_rojo"
+        android:drawableLeft="@drawable/ic_time_1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/etNombreSala"
+        />
+    <Button
+        android:id="@+id/btElegirHoraInicio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickElegirHora"
+        android:text="@string/elegir_hora_inicio"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_redondo_rojo"
+        android:drawableLeft="@drawable/ic_hour_1"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btElegirFechaInicio"
+        />
+
+    <Button
+        android:id="@+id/btElegirFechaFin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickElegirFecha"
+        android:text="@string/elegir_fecha_fin"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_redondo_rojo"
+        android:drawableLeft="@drawable/ic_time_2"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/btElegirHoraInicio"
+        />
+    <Button
+        android:id="@+id/btElegirHoraFin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onClickElegirHora"
+        android:text="@string/elegir_hora_fin"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_redondo_rojo"
+        android:drawableLeft="@drawable/ic_hour_2"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btElegirFechaFin"
+        />
+
+    <Button
+        android:id="@+id/btCrearSala"
+        android:onClick="onClickCrearSala"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/reservar_sala"
+        android:textColor="@color/white"
+        android:background="@drawable/bt_redondo_morado"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
